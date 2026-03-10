@@ -25,6 +25,7 @@
   <li><a href="#about" class="hover:text-yellow-300 transition">About Me</a></li>
   <li><a href="#skills" class="hover:text-yellow-300 transition">Skills</a></li>
   <li><a href="#projects" class="hover:text-yellow-300 transition">Projects</a></li>
+  <li><a href="#certificates" class="hover:text-yellow-300 transition">Certificates</a></li>
   <li><a href="#hackathons" class="hover:text-yellow-300 transition">Hackathons</a></li>
     <li><a href="#training" class="hover:text-yellow-300">Training</a></li>
   <li><a href="#certifications" class="hover:text-yellow-300 transition">Certifications</a></li>
@@ -41,7 +42,7 @@
       <h2 class="text-5xl font-extrabold mb-4 text-blue-700">Welcome to My Portfolio</h2>
       <p class="text-xl text-gray-700 mb-6">Showcasing my journey, projects, Certifications</p>
       <a href="#projects" class="inline-block bg-blue-700 text-white px-8 py-3 rounded-full shadow-lg hover:bg-yellow-400 hover:text-blue-900 transition font-semibold">Explore My Work</a>
-      <a href="Bairam_MaheshCV.doc" target="_blank" class="inline-block ml-4 bg-blue-700 text-white px-8 py-3 rounded-full shadow-lg hover:bg-yellow-400 hover:text-blue-900 transition font-semibold"> Download CV </a>
+      <a href="Maheshresume.doc" target="_blank" class="inline-block ml-4 bg-blue-700 text-white px-8 py-3 rounded-full shadow-lg hover:bg-yellow-400 hover:text-blue-900 transition font-semibold"> Download Resume </a>
     </section>
 
     <!-- About Me Section -->
@@ -108,19 +109,6 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <!-- Project Card 1 -->
         <div class="bg-white rounded-xl shadow-lg p-8 hover:scale-105 transform transition">
-          <h3 class="text-xl font-bold mb-2 text-indigo-700">Portfolio Website</h3>
-          <p class="mb-4 text-gray-700">A personal portfolio website built with HTML, Tailwind CSS, and JavaScript, featuring responsive design and smooth navigation.</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-medium">HTML</span>
-            <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-medium">CSS</span>
-            <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-medium">JavaScript</span>
-            <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-medium">Tailwind CSS</span>
-          </div>
-          <a href="javascript:void(0);" onclick="openModal('project1')" class="text-blue-600 hover:underline font-semibold">View Project</a>
-        </div>
-
-        <!-- Project Card 2 -->
-        <div class="bg-white rounded-xl shadow-lg p-8 hover:scale-105 transform transition">
           <h3 class="text-xl font-bold mb-2 text-indigo-700">Automatic Floor Cleaning Robot</h3>
           <p class="mb-4 text-gray-700">An Arduino-based autonomous cleaning robot using sensors and Bluetooth for smart floor cleaning.</p>
           <div class="flex flex-wrap gap-2 mb-4">
@@ -128,7 +116,7 @@
           </div>
           <a href="javascript:void(0);" onclick="openModal('project2')" class="text-blue-600 hover:underline font-semibold">View Project</a>
         </div>
-        <!-- Project Card 3 -->
+        <!-- Project Card 2 -->
 <div class="bg-white rounded-xl shadow-lg p-8 hover:scale-105 transform transition">
 
 <h3 class="text-xl font-bold mb-2 text-indigo-700">
@@ -153,7 +141,7 @@ View Project
 </a>
 
 </div>
-<!-- Project Card 4 -->
+<!-- Project Card 3 -->
 
 <div class="bg-white rounded-xl shadow-lg p-8 hover:scale-105 transform transition">
 
@@ -182,6 +170,104 @@ View Project
 </div>
 
       </div>
+      <br> <br>
+<section id="certificates" class="mb-20">
+
+<h2 class="text-3xl font-bold mb-8 text-blue-700 text-center">
+Certificates
+</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- HTML Certificate -->
+<div class="bg-white p-6 rounded-xl shadow-lg text-center">
+<h3 class="text-lg font-semibold text-indigo-700 mb-2">
+Front End Development - HTML
+</h3>
+
+<p class="text-gray-600 mb-4">Great Learning</p>
+
+<button onclick="openCertificate('html')" 
+class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-yellow-400 hover:text-blue-900">
+View Certificate
+</button>
+</div>
+
+
+<!-- AI Skills Passport -->
+<div class="bg-white p-6 rounded-xl shadow-lg text-center">
+<h3 class="text-lg font-semibold text-indigo-700 mb-2">
+AI Skills Passport
+</h3>
+
+<p class="text-gray-600 mb-4">
+Microsoft & Ernst & Young
+</p>
+
+<button onclick="openCertificate('ai')" 
+class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-yellow-400 hover:text-blue-900">
+View Certificate
+</button>
+</div>
+
+
+<!-- SQL Certificate -->
+<div class="bg-white p-6 rounded-xl shadow-lg text-center">
+<h3 class="text-lg font-semibold text-indigo-700 mb-2">
+SQL (Intermediate)
+</h3>
+
+<p class="text-gray-600 mb-4">
+HackerRank
+</p>
+
+<button onclick="openCertificate('sql')" 
+class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-yellow-400 hover:text-blue-900">
+View Certificate
+</button>
+</div>
+
+
+<!-- Green Internship -->
+<div class="bg-white p-6 rounded-xl shadow-lg text-center">
+<h3 class="text-lg font-semibold text-indigo-700 mb-2">
+Green Internship Program
+</h3>
+
+<p class="text-gray-600 mb-4">
+1M1B Foundation
+</p>
+
+<button onclick="openCertificate('green')" 
+class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-yellow-400 hover:text-blue-900">
+View Certificate
+</button>
+</div>
+
+
+<!-- Data Science -->
+<div class="bg-white p-6 rounded-xl shadow-lg text-center">
+<h3 class="text-lg font-semibold text-indigo-700 mb-2">
+Introduction to Data Science
+</h3>
+
+<p class="text-gray-600 mb-4">
+Cisco Networking Academy
+</p>
+
+<button onclick="openCertificate('datascience')" 
+class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-yellow-400 hover:text-blue-900">
+View Certificate
+</button>
+</div>
+
+</div>
+
+</section>
+
+<br>
+
+
       <section id="training" class="mb-20">
   <h2 class="text-3xl font-bold mb-8 text-blue-700 text-center">Training / Internships</h2>
 
@@ -193,6 +279,10 @@ View Project
       <p class="text-gray-700 mb-1"><strong>Sub Station:</strong>Transmission Corporation of Telangana Limited (TSTRANSCO), Ramagundam</p>
       <p class="text-gray-700 mb-1"><strong>Place & Duration:</strong> 132 KV Substation, Malyalapally, Ramagundam June 2023 – November 2023</p>
       <p class="text-gray-700"><strong>Description:</strong> Completed industrial training in electrical substation maintenance and operations.</p>
+      <button onclick="openTrainingGallery()" 
+class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-yellow-400 hover:text-blue-900">
+View Training Photos
+</button>
     </div>
 
     <!-- Add other trainings here -->
@@ -201,6 +291,10 @@ View Project
       <p class="text-gray-700 mb-1"><strong>Institution:</strong> 1M1B Foundation</p>
       <p class="text-gray-700 mb-1"><strong>Duration:</strong> July 2025</p>
       <p class="text-gray-700"><strong>Description:</strong> Learned sustainability practices and participated in green skill initiatives.</p>
+      <button onclick="openInternshipGallery()" 
+class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-yellow-400 hover:text-blue-900">
+View 1M1B Internship Media
+</button>
     </div>
 
   </div>
@@ -276,15 +370,7 @@ flex items-center justify-center">
     <section id="certifications" class="mb-20 bg-white rounded-xl shadow-lg p-10">
       <h2 class="text-3xl font-bold mb-8 text-blue-700 text-center">Certifications</h2>
       
-      <!-- 1M1B Certification -->
-      <div class="border-l-4 border-green-600 pl-6">
-        <a href="image.png" target="_blank" rel="noopener">
-          <h3 class="text-xl font-semibold text-blue-700 hover:underline">1M1B Green Skills & Sustainability Internship</h3>
-        </a>
-        <p class="text-gray-700 mt-2">Completed a certified internship focused on sustainability, green skills, and real-world climate action projects under the 1M1B Future Leaders program.</p>
-        <p class="text-sm text-gray-500 mt-1">Issued by: 1M1B Foundation | Date: July 2025</p>
-      </div>
-
+    
       <!-- AWS Compute Badge -->
       <div class="border-l-4 border-green-600 pl-6 mt-8">
         <a href="https://www.credly.com/badges/0c040258-a12f-4ab3-b3a0-48e65a08ce23/public_url" target="_blank" rel="noopener">
@@ -564,6 +650,159 @@ messages.scrollTop = messages.scrollHeight;
 });
 
 
+function openCertificate(type){
+
+let img = document.getElementById("certificateImageView");
+let modal = document.getElementById("certificateModal");
+
+if(type === "html"){
+img.src = "HTML.jpeg";
+}
+
+else if(type === "ai"){
+img.src = "AIskills.jpeg";
+}
+
+else if(type === "sql"){
+img.src = "SQL.jpeg";
+}
+
+else if(type === "green"){
+img.src = "image.png";
+}
+
+else if(type === "datascience"){
+img.src = "cisco.jpeg";
+}
+
+modal.classList.remove("hidden");
+
+}
+
+function closeCertificate(){
+document.getElementById("certificateModal").classList.add("hidden");
+}
+
+
+
+
+
+// Training Images
+let trainingImages = [
+"test.jpeg",
+"readings.jpeg",
+"batteryreadings.jpeg",
+"controlpanels.jpeg",
+"maintenance.jpeg"
+];
+
+let trainingIndex = 0;
+
+function openTrainingGallery(){
+document.getElementById("trainingModal").classList.remove("hidden");
+document.getElementById("trainingImage").src = trainingImages[trainingIndex];
+}
+
+function closeTrainingGallery(){
+document.getElementById("trainingModal").classList.add("hidden");
+}
+
+function nextTrainingImage(){
+
+trainingIndex++;
+
+if(trainingIndex >= trainingImages.length){
+trainingIndex = 0;
+}
+
+document.getElementById("trainingImage").src = trainingImages[trainingIndex];
+}
+
+function prevTrainingImage(){
+
+trainingIndex--;
+
+if(trainingIndex < 0){
+trainingIndex = trainingImages.length - 1;
+}
+
+document.getElementById("trainingImage").src = trainingImages[trainingIndex];
+}
+
+
+let internshipMedia = [
+"1m1bvirtual.jpeg",
+"1m1bvid.mp4",
+"1m1bsurvey.jpeg",
+"1m1bclean.jpeg",
+"1m1benergy.jpeg",
+"1m1bplant.jpeg"
+];
+
+let internshipIndex = 0;
+
+function openInternshipGallery(){
+internshipIndex = 0;
+document.getElementById("internshipModal").classList.remove("hidden");
+showInternshipMedia();
+}
+
+function closeInternshipGallery(){
+document.getElementById("internshipModal").classList.add("hidden");
+}
+
+function showInternshipMedia(){
+
+let file = internshipMedia[internshipIndex];
+
+let img = document.getElementById("internshipImage");
+let vid = document.getElementById("internshipVideo");
+let source = document.getElementById("videoSource");
+
+if(file.endsWith(".mp4")){
+
+img.classList.add("hidden");
+vid.classList.remove("hidden");
+
+source.src = file;
+vid.load();
+
+}else{
+
+vid.classList.add("hidden");
+img.classList.remove("hidden");
+
+img.src = file;
+
+}
+
+}
+
+function nextInternshipMedia(){
+
+internshipIndex++;
+
+if(internshipIndex >= internshipMedia.length){
+internshipIndex = 0;
+}
+
+showInternshipMedia();
+
+}
+
+function prevInternshipMedia(){
+
+internshipIndex--;
+
+if(internshipIndex < 0){
+internshipIndex = internshipMedia.length - 1;
+}
+
+showInternshipMedia();
+
+}
+
+
 
 
 </script>
@@ -587,5 +826,98 @@ class="border w-full p-2 rounded outline-none"/>
 </div>
 
 </div>
+
+<!-- Certificate Popup -->
+<div id="certificateModal" 
+class="fixed inset-0 bg-black bg-opacity-70 hidden flex items-center justify-center">
+
+<div class="bg-white p-4 rounded-lg max-w-3xl relative">
+
+<span onclick="closeCertificate()" 
+class="absolute top-2 right-4 text-2xl cursor-pointer">
+&times;
+</span>
+
+<img id="certificateImageView" src="" class="w-full rounded-lg">
+
+</div>
+
+</div>
+
+<div id="trainingModal" 
+class="fixed inset-0 bg-black bg-opacity-70 hidden flex items-center justify-center">
+
+<div class="bg-white p-6 rounded-lg max-w-3xl w-full text-center relative">
+
+<span onclick="closeTrainingGallery()" 
+class="absolute top-2 right-4 text-2xl cursor-pointer">
+&times;
+</span>
+
+<h3 class="text-xl font-bold mb-4 text-indigo-700">
+Training Photos
+</h3>
+
+<img id="trainingImage" 
+src="" 
+class="max-w-[500px] max-h-[350px] object-contain mx-auto rounded-lg mb-4">
+
+<div class="flex justify-center gap-4">
+
+<button onclick="prevTrainingImage()" 
+class="bg-blue-700 text-white px-4 py-2 rounded">
+Previous
+</button>
+
+<button onclick="nextTrainingImage()" 
+class="bg-blue-700 text-white px-4 py-2 rounded">
+Next
+</button>
+
+</div>
+
+</div>
+</div>
+
+<div id="internshipModal" 
+class="fixed inset-0 bg-black bg-opacity-70 hidden flex items-center justify-center">
+
+<div class="bg-white p-6 rounded-lg max-w-3xl w-full text-center relative">
+
+<span onclick="closeInternshipGallery()" 
+class="absolute top-2 right-4 text-2xl cursor-pointer">&times;</span>
+
+<h3 class="text-xl font-bold mb-4 text-indigo-700">
+1M1B Green Internship
+</h3>
+
+<!-- IMAGE -->
+<img id="internshipImage" 
+class="max-w-[500px] max-h-[350px] object-contain mx-auto rounded-lg mb-4 hidden">
+
+<!-- VIDEO -->
+<video id="internshipVideo" controls 
+class="max-w-[500px] max-h-[350px] mx-auto rounded-lg mb-4 hidden">
+<source id="videoSource" src="" type="video/mp4">
+</video>
+
+<div class="flex justify-center gap-4">
+
+<button onclick="prevInternshipMedia()" 
+class="bg-blue-700 text-white px-4 py-2 rounded">
+Previous
+</button>
+
+<button onclick="nextInternshipMedia()" 
+class="bg-blue-700 text-white px-4 py-2 rounded">
+Next
+</button>
+
+</div>
+
+</div>
+</div>
+
+
 </body>
 </html>
