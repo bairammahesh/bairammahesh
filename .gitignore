@@ -1,0 +1,55 @@
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*win.pyd
+*.o
+*.so
+
+# C extensions
+*.pyd
+*.dll
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Model and data files
+model/
+*.npy
+*.h5
+*.json
+*.pckl
+demographic_info.csv
+patient_diagnosis.csv
+
+# Ignore the large audio database
+Respiratory_Sound_Database/
+
+# IDE settings
+.idea/
+.vscode/
