@@ -136,11 +136,11 @@ class="bg-blue-700 text-white px-4 py-2 rounded-lg shadow hover:bg-yellow-400 ho
 GitHub
 </a>
 
+<!-- Media Button -->
 <button onclick="openModal('project1')" 
 class="bg-blue-700 text-white px-4 py-2 rounded-lg shadow hover:bg-yellow-400 hover:text-blue-900 transition">
 Media
 </button>
-
 
 </div>
 
@@ -520,8 +520,7 @@ function openModal(type){
   let content = '';
 
 
-  /* PROJECT 1 */
-if(type === 'project1'){
+ if(type === 'project1'){
 content = `
 
 <h3 class='text-xl font-bold mb-4 text-indigo-700 text-center'>
@@ -531,12 +530,7 @@ Respiratory Lung Disease Classification Using Audio Sounds
 <div class="flex flex-col items-center">
 
 <img id="lungMediaImage"
-class="max-w-[500px] max-h-[350px] object-contain rounded-lg shadow mb-4 hidden">
-
-<video id="lungMediaVideo" controls
-class="max-w-[500px] max-h-[350px] rounded-lg shadow mb-4 hidden">
-<source id="lungVideoSource" src="" type="video/mp4">
-</video>
+class="max-w-[500px] max-h-[350px] object-contain rounded-lg shadow mb-4">
 
 <div class="flex gap-4">
 <button onclick="prevLungMedia()" class="bg-blue-700 text-white px-4 py-2 rounded">
@@ -556,7 +550,6 @@ AI-based project that classifies lung diseases using respiratory sounds.
 
 `;
 }
-
   else if(type === 'project2'){
     content = `
       <h3 class='text-xl font-bold mb-4 text-indigo-700 text-center'>Automatic Floor Cleaning Robot</h3>
@@ -888,29 +881,14 @@ let lungMedia = [
 "lung1.jpeg",
 "lung2.jpeg",
 "lung3.jpeg",
-"lung4.jpeg",
-"lungvideo1.mp4"
+"lung4.jpeg"
 ];
 
 let lungIndex = 0;
 
 function showLungMedia(){
-let file = lungMedia[lungIndex];
-
 let img = document.getElementById("lungMediaImage");
-let video = document.getElementById("lungMediaVideo");
-let source = document.getElementById("lungVideoSource");
-
-if(file.endsWith(".mp4")){
-img.classList.add("hidden");
-video.classList.remove("hidden");
-source.src = file;
-video.load();
-}else{
-video.classList.add("hidden");
-img.classList.remove("hidden");
-img.src = file;
-}
+img.src = lungMedia[lungIndex];
 }
 
 function nextLungMedia(){
