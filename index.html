@@ -127,10 +127,22 @@ feature extraction and machine learning algorithms for disease prediction.
 <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-medium">Audio Processing</span>
 </div>
 
-<a href="javascript:void(0);" onclick="openModal('project1')" 
-class="text-blue-600 hover:underline font-semibold">
-View Project
+<div class="flex gap-4 mt-4">
+
+<!-- GitHub Button -->
+<a href="https://github.com/bairammahesh/-Respiratory-Sound-Diagnostic-Engine" 
+target="_blank"
+class="bg-blue-700 text-white px-4 py-2 rounded-lg shadow hover:bg-yellow-400 hover:text-blue-900 transition">
+GitHub
 </a>
+
+<button onclick="openModal('project1')" 
+class="bg-blue-700 text-white px-4 py-2 rounded-lg shadow hover:bg-yellow-400 hover:text-blue-900 transition">
+Media
+</button>
+
+
+</div>
 
 </div>
 
@@ -511,29 +523,39 @@ function openModal(type){
   /* PROJECT 1 */
 if(type === 'project1'){
 content = `
+
 <h3 class='text-xl font-bold mb-4 text-indigo-700 text-center'>
 Respiratory Lung Disease Classification Using Audio Sounds
 </h3>
 
-<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+<div class="flex flex-col items-center">
 
-<img src="lungproject.jpeg" 
-class="w-full md:w-1/2 rounded-lg shadow">
+<img id="lungMediaImage"
+class="max-w-[500px] max-h-[350px] object-contain rounded-lg shadow mb-4 hidden">
 
-<video controls class="w-full md:w-1/2 rounded-lg shadow">
-<source src="lungproject.mp4" type="video/mp4">
+<video id="lungMediaVideo" controls
+class="max-w-[500px] max-h-[350px] rounded-lg shadow mb-4 hidden">
+<source id="lungVideoSource" src="" type="video/mp4">
 </video>
+
+<div class="flex gap-4">
+<button onclick="prevLungMedia()" class="bg-blue-700 text-white px-4 py-2 rounded">
+Previous
+</button>
+
+<button onclick="nextLungMedia()" class="bg-blue-700 text-white px-4 py-2 rounded">
+Next
+</button>
+</div>
 
 </div>
 
 <p class="text-gray-700 mt-4 text-center">
-This project uses audio signals of respiratory sounds and applies 
-MFCC feature extraction with machine learning algorithms to classify 
-lung diseases such as asthma, pneumonia, and bronchitis.
+AI-based project that classifies lung diseases using respiratory sounds.
 </p>
+
 `;
 }
-
 
   else if(type === 'project2'){
     content = `
@@ -862,7 +884,50 @@ showInternshipMedia();
 
 }
 
+let lungMedia = [
+"lung1.jpeg",
+"lung2.jpeg",
+"lung3.jpeg",
+"lung4.jpeg",
+"lungvideo1.mp4"
+];
 
+let lungIndex = 0;
+
+function showLungMedia(){
+let file = lungMedia[lungIndex];
+
+let img = document.getElementById("lungMediaImage");
+let video = document.getElementById("lungMediaVideo");
+let source = document.getElementById("lungVideoSource");
+
+if(file.endsWith(".mp4")){
+img.classList.add("hidden");
+video.classList.remove("hidden");
+source.src = file;
+video.load();
+}else{
+video.classList.add("hidden");
+img.classList.remove("hidden");
+img.src = file;
+}
+}
+
+function nextLungMedia(){
+lungIndex++;
+if(lungIndex >= lungMedia.length){
+lungIndex = 0;
+}
+showLungMedia();
+}
+
+function prevLungMedia(){
+lungIndex--;
+if(lungIndex < 0){
+lungIndex = lungMedia.length - 1;
+}
+showLungMedia();
+}
 
 
 </script>
